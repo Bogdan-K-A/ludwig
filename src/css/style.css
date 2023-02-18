@@ -1,0 +1,418 @@
+:root {
+	/* ---------------------------------- colors --------------------------------- */
+	--prymari-color: #f2dea2;
+	--secondary-color: #a69792;
+	--white-color: #ffffff;
+	--bg-color: #40161d;
+	--btn-text-color: #8b0000;
+	--imprint-text-color: #ffd14c;
+	--imprint-title-color: #ff8a00;
+
+	/* ---------------------------------- fonts --------------------------------- */
+	--ff-title: "Avenir LT Std", sans-serif;
+	--ff-text: "Brandon Grotesque", sans-serif;
+	--ff-text-imprint: "Barlow", sans-serif;
+}
+
+body {
+	/* height: 100%; */
+	font-family: var(--ff-text);
+	font-size: 24px;
+	line-height: 1.1;
+	letter-spacing: 0.5px;
+	background: var(--bg-color);
+	color: var(--white-color);
+}
+.wrapper {
+	overflow: hidden;
+	min-height: 100vh;
+	/* display: flex;
+	flex-direction: column; */
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+.container {
+	max-width: 800px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+/* ------------------------------- media rule ------------------------------- */
+@media screen and (max-width: 801px) {
+	.container {
+		max-width: 500px;
+	}
+}
+/* ------------------------------- ========== ------------------------------- */
+
+/* --------------------------------- header --------------------------------- */
+.header {
+	padding-top: 100px;
+	padding-bottom: 77px;
+}
+
+.contentPosition {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* ------------------------------- media rule------------------------------- */
+@media screen and (max-width: 801px) {
+	.contentPosition {
+		position: relative;
+		flex-direction: column;
+	}
+
+	.headerContentWrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+/* ------------------------------- ========== ------------------------------- */
+
+.title {
+	margin-bottom: 44px;
+
+	font-family: var(--ff-title);
+	font-weight: 300;
+	font-size: 48px;
+	line-height: 1.15;
+
+	color: var(--prymari-color);
+}
+
+.aboutText {
+	width: 325px;
+	margin-bottom: 80px;
+}
+
+/* ------------------------------- media rule------------------------------- */
+@media screen and (max-width: 801px) {
+	.title {
+		margin-bottom: 450px;
+	}
+
+	.aboutText {
+		margin-bottom: 30px;
+	}
+}
+/* ------------------------------- ========== ------------------------------- */
+
+.aboutText span {
+	color: var(--prymari-color);
+}
+
+.btnLinkEmail {
+	display: inline-block;
+	padding: 12px 33px;
+	width: 160px;
+	height: 42px;
+
+	font-family: var(--ff-title);
+	font-size: 14px;
+	font-weight: 700;
+
+	background: var(--prymari-color);
+
+	border-radius: 5px;
+	color: var(--btn-text-color);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.3s ease;
+}
+
+.btnLinkEmail:hover {
+	background: var(--secondary-color);
+	transition: 0.3s ease;
+}
+
+.img {
+	width: 307px;
+	height: 398px;
+}
+
+/* ------------------------------- media rule ------------------------------- */
+@media screen and (max-width: 801px) {
+	.img {
+		position: absolute;
+		top: 80px;
+
+		margin: 0 auto;
+	}
+}
+/* ------------------------------- ========== ------------------------------- */
+
+/* ----------------------------- video container ---------------------------- */
+.videoContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.videoContainer::after,
+.videoContainer::before {
+	content: "";
+
+	width: 100%;
+	height: 1px;
+
+	background: var(--secondary-color);
+}
+
+.videoContainer::after {
+	content: "";
+
+	width: 100%;
+	height: 1px;
+
+	background: var(--secondary-color);
+}
+
+.videoContainer::before {
+	margin-bottom: 42px;
+}
+
+.videoContainer::after {
+	margin-top: 59px;
+}
+
+.sectionTitle {
+	margin-bottom: 30px;
+
+	font-weight: 500;
+	font-size: 25px;
+
+	color: var(--prymari-color);
+}
+
+.playIcon {
+	width: 78px;
+	height: 78px;
+
+	fill: var(--prymari-color);
+	cursor: pointer;
+	transition: 0.3 ease;
+}
+
+.playIcon:hover,
+.playIcon:focus {
+	fill: var(--secondary-color);
+	transition: 0.3 ease;
+}
+
+.wreathIcon {
+	width: 134px;
+	height: 78px;
+}
+
+/* --------------------------------- footer --------------------------------- */
+.footer {
+	padding-top: 60px;
+	/* padding-bottom: 20px; */
+
+	margin-top: auto;
+}
+
+/* ------------------------------- media rule ------------------------------- */
+@media screen and (max-width: 801px) {
+	.footerContentWrapper {
+		max-width: 325px;
+		margin: 0 auto;
+	}
+}
+/* ------------------------------- ========== ------------------------------- */
+
+.wrapperText {
+	max-width: 426px;
+}
+
+.footerText {
+	margin-bottom: 29px;
+	line-height: 1.4;
+}
+
+.colorText {
+	color: var(--prymari-color);
+}
+
+.positionSocialLink {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.iconList {
+	display: flex;
+}
+
+.emailIcon {
+	margin-right: 50px;
+}
+
+/* ------------------------------- media rule ------------------------------- */
+@media screen and (max-width: 801px) {
+	.positionSocialLink {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.iconList {
+		margin: 0 auto 130px auto;
+	}
+
+	.emailIcon {
+		margin-right: 80px;
+	}
+
+	.marginBottom {
+		margin-bottom: 80px;
+	}
+}
+/* ------------------------------- ========== ------------------------------- */
+
+.emailIcon,
+.linkedInIcon {
+	fill: var(--secondary-color);
+	transition: 0.3 ease;
+}
+
+.emailIcon:hover,
+.emailIcon:focus,
+.linkedInIcon:hover,
+.linkedInIcon:focus {
+	fill: var(--prymari-color);
+	transition: 0.3 ease;
+}
+
+/* ------------------------------ flexContainer ----------------------------- */
+.footerBottomBox {
+	height: 100px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* ------------------------------- media rule ------------------------------- */
+@media screen and (max-width: 801px) {
+	.footerBottomBox {
+		height: 40px;
+	}
+}
+
+.nameText,
+.imprintLink {
+	font-size: 14px;
+	color: var(--secondary-color);
+}
+
+/* --------------------------------- IMPRINT STYLE -------------------------------- */
+.imprint {
+	text-align: center;
+}
+
+.imprintTitle {
+	opacity: 1;
+	margin-bottom: 0;
+}
+
+@media screen and (min-width: 801px) {
+	.imprintTitle {
+		opacity: 0;
+	}
+}
+
+.titleLink {
+	font-family: var(--ff-text-imprint);
+	font-weight: bold;
+	font-size: 75px;
+
+	margin-bottom: 60px;
+
+	color: var(--imprint-title-color);
+}
+
+.imprintContainer {
+	max-width: 840px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+.textImprint {
+	font-family: var(--ff-text-imprint);
+	font-weight: 200;
+	font-size: 28px;
+	line-height: 1.4;
+
+	color: var(--imprint-text-color);
+}
+
+.marginBottomText {
+	margin-bottom: 35px;
+}
+
+.list {
+	list-style-type: disc;
+}
+
+.listItem {
+	margin-left: 50px;
+}
+
+.underscore {
+	border-bottom: 2px solid var(--imprint-text-color);
+}
+
+/* ---------------------------------- modal --------------------------------- */
+.backdrop {
+	background: rgb(40, 38, 38);
+
+	opacity: 1;
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.backdrop--position {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.modal {
+	transform: translate(-50%, -50%);
+}
+
+.modal--position {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.modal__btn-close {
+	width: 30px;
+	height: 30px;
+
+	/* color: var(--imprint-text-color); */
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.modal__btn-close--position {
+	position: absolute;
+	top: -30px;
+	right: 0px;
+}
