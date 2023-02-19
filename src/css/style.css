@@ -416,3 +416,7 @@ body {
 	top: -30px;
 	right: 0px;
 }
+
+.videoStyle {
+	max-width: 100%;
+}
