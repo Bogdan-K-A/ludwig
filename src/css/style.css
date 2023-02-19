@@ -419,12 +419,11 @@ body {
 
 /* ------------------------------- videoStyle ------------------------------- */
 .videoStyle {
-	max-width: 100%;
+	width: 100%;
 }
 
-/* @media screen and (max-width: 801px) {
+@media screen and (max-width: 801px) {
 	.videoStyle {
-		width: 500px;
-		
+		width: 90vw;
 	}
-} */
+}
